@@ -6,6 +6,8 @@ data/
 encoded-might*.json
 metadata.json
 
+google_credantional.json
+
 # C extensions
 *.so
 

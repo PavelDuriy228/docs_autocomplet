@@ -36,9 +36,7 @@ class PersonalCard:
             ):
                 print(f"[WARN] Есть неизвестные поля {student_context}")
 
-            student_path = (
-                f"{surname}_{name}_{student_context['birth_date']}_{birth_date}"
-            )
+            student_path = f"{surname}_{name}_{student_context['birth_date']}"
             self._save_doc(student_path, doc)
 
     def _save_doc(self, student: str, doc: DocxTemplate):

@@ -69,6 +69,13 @@ def process_form_data(input_file_path, output_file_path=None) -> list[dict]:
         "mother_phone",
     ]
 
+    df["study_form"] = df["study_form"].replace(
+        {
+            "Бюджетное обучение": "г/б",
+            "Внебюджетное обучение (платное)": "в/б",
+            "Целевое обучение": "целевое",
+        }
+    )
     # 6. Добавляем отсутствующие метки с пустыми значениями
     for key in doc_keys:
         if key not in df.columns:
@@ -76,7 +83,7 @@ def process_form_data(input_file_path, output_file_path=None) -> list[dict]:
 
     # 7. Преобразуем DataFrame в список словарей (по одной записи на студента)
     # Этот формат идеально подходить для заполнения шаблона Word через docxtpl
-    students_records = df[doc_keys].to_dict(orient="records")
+    students_records = df.to_dict(orient="records")
 
     # Опционально сохраняем обработанную таблицу
     if output_file_path:
@@ -88,8 +95,9 @@ def process_form_data(input_file_path, output_file_path=None) -> list[dict]:
 # --- Пример использования ---
 if __name__ == "__main__":
     # Входные данные (список словарей из формы)
-    students = process_form_data("responses_from_form.xlsx")
+    students = process_form_data("data/2026-08-04 Заселение в ДАС-2 2026.csv")
 
     # Пример получившейся структуры для первой строки:
     print("Пример контекста для заполнения Word:")
-    print(students[0])
+    for row in pd.DataFrame(students).itertuples():
+        print(row._2)

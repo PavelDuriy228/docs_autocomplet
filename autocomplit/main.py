@@ -1,5 +1,5 @@
 from personal_card import PersonalCard
-from data_process import process_form_data
+from autocomplit.data_process import process_form_data
 
 
 def main():

@@ -10,6 +10,9 @@ class Settings:
     FORMS_TOKEN = os.getenv("OATH_TOKEN")
     ORG_ID = os.getenv("ORG_ID")
     SURVEY_ID = os.getenv("SURVEY_ID")
+    SPREADSHEET_ID = os.getenv("GOOGLE_SHEET_ID")
+    SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
+    GOOGLE_CREDANTIONAL = "google_credantional.json"
 
 
 # class MetaData:

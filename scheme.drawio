@@ -1,0 +1,61 @@
+<mxfile host="Electron">
+  <diagram name="Страница-1" id="mcpR3UfQaueimZjaG5nT">
+    <mxGraphModel dx="1030" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ad6K9DhiOj_ZLgMdU2cJ-16" edge="1" parent="1" source="ad6K9DhiOj_ZLgMdU2cJ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ad6K9DhiOj_ZLgMdU2cJ-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ad6K9DhiOj_ZLgMdU2cJ-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Actor" vertex="1">
+          <mxGeometry height="60" width="30" x="60" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="ad6K9DhiOj_ZLgMdU2cJ-8" edge="1" parent="1" source="ad6K9DhiOj_ZLgMdU2cJ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ad6K9DhiOj_ZLgMdU2cJ-7" value="Выгрузка&lt;div&gt;всех ответов&amp;nbsp;&lt;/div&gt;&lt;div&gt;в виде csv таблицы&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ad6K9DhiOj_ZLgMdU2cJ-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Yandex Form" vertex="1">
+          <mxGeometry height="60" width="120" x="150" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="ad6K9DhiOj_ZLgMdU2cJ-11" edge="1" parent="1" source="ad6K9DhiOj_ZLgMdU2cJ-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ad6K9DhiOj_ZLgMdU2cJ-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ad6K9DhiOj_ZLgMdU2cJ-14" edge="1" parent="1" source="ad6K9DhiOj_ZLgMdU2cJ-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ad6K9DhiOj_ZLgMdU2cJ-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ad6K9DhiOj_ZLgMdU2cJ-7" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="data_process&lt;div&gt;(чтение csv и mapping)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="500" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="ad6K9DhiOj_ZLgMdU2cJ-20" edge="1" parent="1" source="ad6K9DhiOj_ZLgMdU2cJ-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ad6K9DhiOj_ZLgMdU2cJ-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ad6K9DhiOj_ZLgMdU2cJ-9" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="autocomplit&lt;div&gt;(заполняет доки у новых студентов по ID опросника)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="690" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ad6K9DhiOj_ZLgMdU2cJ-22" edge="1" parent="1" source="ad6K9DhiOj_ZLgMdU2cJ-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ad6K9DhiOj_ZLgMdU2cJ-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ad6K9DhiOj_ZLgMdU2cJ-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Отправка на google sheet новых по ID ответа&lt;div&gt;У всех новых строк status = NEW&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="120" x="690" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="ad6K9DhiOj_ZLgMdU2cJ-18" edge="1" parent="1" source="ad6K9DhiOj_ZLgMdU2cJ-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ad6K9DhiOj_ZLgMdU2cJ-4" value="&lt;br&gt;Обновить данные&lt;div&gt;&lt;br&gt;&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ad6K9DhiOj_ZLgMdU2cJ-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="МАКС app" vertex="1">
+          <mxGeometry height="60" width="120" x="150" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ad6K9DhiOj_ZLgMdU2cJ-19" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="хранилище документов студентов" vertex="1">
+          <mxGeometry height="80" width="80" x="850" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ad6K9DhiOj_ZLgMdU2cJ-21" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Google таблица" vertex="1">
+          <mxGeometry height="80" width="80" x="850" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="ad6K9DhiOj_ZLgMdU2cJ-23" edge="1" parent="1" source="ad6K9DhiOj_ZLgMdU2cJ-15" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="ad6K9DhiOj_ZLgMdU2cJ-19" value="Получить все/чьи то доки&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490" y="280" as="sourcePoint" />
+            <mxPoint x="540" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
