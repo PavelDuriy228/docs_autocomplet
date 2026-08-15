@@ -10,7 +10,7 @@ def process_form_data(input_file_path, output_file_path=None) -> list[dict]:
 
     # Очищаем названия колонок от лишних пробелов в начале/конце
     df.columns = df.columns.str.strip()
-
+    df["ID"] = range(1, len(df) + 1)
     # 2. Словарь соответствия: {"Название в форме": "Метка в шаблоне Word"}
     mapping = {
         "Фамилия": "surname",
@@ -20,6 +20,7 @@ def process_form_data(input_file_path, output_file_path=None) -> list[dict]:
         "Дата рождения": "birth_date",
         "Институт": "institute",
         "Курс": "course",
+        "Номер учебной группы": "group_num",
         "Форма обучения": "study_form",
         "Серия и номер паспорта": "passport",
         "Семейное положение": "marital_status",

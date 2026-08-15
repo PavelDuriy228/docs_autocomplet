@@ -21,7 +21,7 @@ class ToSheetFormater:
     # ID	ФИО	Статус	Номер комнаты	Институт	№ Группы	Курс	г/б в/б	Паспорт	Регион	Дата рождения	Номер телефона	Дата заселения	Справка 086у/сифилис	Флюра до	Оплата	Паспорт	сергеев	Акты			прописка	журнал
 
     # Local Table
-    # ['ID', 'Время создания', 'surname', 'name', 'patronymic', 'gender',
+    # ['ID', 'surname', 'name', 'patronymic', 'gender',
     #        'birth_date', 'institute', 'course', 'study_form', 'passport',
     #        'marital_status', 'phone', 'country', 'region', 'home_address',
     #        'registration_address', 'father_name', 'father_phone', 'mother_name',
