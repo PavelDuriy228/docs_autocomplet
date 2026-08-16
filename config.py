@@ -18,6 +18,7 @@ class Settings:
     # Max
     MAX_TOKEN = os.getenv("MAX_TOKEN")
     ALLOWED_IDS = os.getenv("ALLOWED_ID", "").split(",")
+    TECH_ADMIN = os.getenv("TECH_ADMIN", "")
 
 
 # class MetaData:

@@ -46,7 +46,7 @@ async def data_update(event: MessageCreated):
         text=f"Начинаю обновление данных с формы, заполнение документов и отправку на диск",
     )
 
-    res = run_pipline()
+    res = await run_pipline()
     if res:
         await event.message.answer(text=f"Все готово!")
     else:

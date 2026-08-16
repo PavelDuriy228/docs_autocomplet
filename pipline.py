@@ -5,7 +5,7 @@ from google_sheet.models import ToSheetFormater
 from config import settings
 
 
-def run_pipline() -> bool:
+async def run_pipline() -> bool:
     try:
         form = FormLoader()
         google_formater = ToSheetFormater()
