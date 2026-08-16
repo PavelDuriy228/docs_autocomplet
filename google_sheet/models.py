@@ -10,9 +10,12 @@ class ToSheetFormater:
 
     def add(self, students_records):
         students_records = DataFrame(students_records)
-        id_in_sheet = [int(id[0]) for id in self.driver.get(range="A2:A")]
+        # Добавляем только уникальные паспорты
+        pasport_in_sheet = [
+            str(pasport[0]) for pasport in self.driver.get(range="H2:H")
+        ]
 
-        to_save = students_records[~students_records["ID"].isin(id_in_sheet)]
+        to_save = students_records[~students_records["passport"].isin(pasport_in_sheet)]
 
         formatted = self._format(to_save)
         self.driver.append(formatted)
