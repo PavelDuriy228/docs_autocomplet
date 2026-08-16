@@ -6,13 +6,18 @@ load_dotenv()
 
 
 class Settings:
+    # Yandex Forms
     FORMS_PUBLIC_API = os.getenv("FORMS_PUBLIC_API")
     FORMS_TOKEN = os.getenv("OATH_TOKEN")
     ORG_ID = os.getenv("ORG_ID")
     SURVEY_ID = os.getenv("SURVEY_ID")
+    # Google Table
     SPREADSHEET_ID = os.getenv("GOOGLE_SHEET_ID")
     SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
     GOOGLE_CREDANTIONAL = "google_credantional.json"
+    # Max
+    MAX_TOKEN = os.getenv("MAX_TOKEN")
+    ALLOWED_IDS = os.getenv("ALLOWED_ID", "").split(",")
 
 
 # class MetaData:
